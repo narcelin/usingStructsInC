@@ -1,0 +1,22 @@
+What is a struct?
+- A struct is a collection of possibly different types of data. "An array of many types of data"
+
+Example of a student struct:
+    typedef struct{
+        char lastName[20];
+        char firstName[20];
+        char initial;
+        int id;
+        double gpa;
+    }student; //This is the name of the struct
+
+So its like an object from javascript
+
+you want to declare items inside a struct:
+    student s1, s2={"jones", "tom", 'c', 456, 3.86}; 
+    You can not re-assign it later on in the program. 
+
+Use dot operator to access fields of the instanse of the student struct. You would use the name.field. So,
+Example:
+    s2.id = 789; //Here I have declared an ID inside my instance s2 of my student struct.
+    strcpy(s2.firstName, "lucy");
