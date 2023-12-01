@@ -20,3 +20,34 @@ Use dot operator to access fields of the instanse of the student struct. You wou
 Example:
     s2.id = 789; //Here I have declared an ID inside my instance s2 of my student struct.
     strcpy(s2.firstName, "lucy");
+
+    scanf(" %s", exampleStudent.firstName);
+    scarf("%d", &eS.gpa); input is dependent on data type inside my struct. Considered as just a double because my gpa was prototyped as a double
+
+Passing a struct into function example:
+call the function and pass the student struct into it so Function(s1);
+    void Function( Student examplesStudent){
+        printf() // no magical way to print entire strut has to be split up into each section.
+    };
+
+
+can make an array with each "slot" in memory of the array as the whole list so,
+    int num = 0;
+    student list[5];
+    list[0].id = 45;
+    list[0].gpa = 4.0;
+    list[1].id = 23;
+
+Pointers to structs:
+typedef struct{
+    char lastName[20];
+    int id;
+    double gpa;
+}student;
+student Fill();
+void FillPtr(student *sPtr);
+int main(){
+    student s1, s2, s3, s4, s5;
+    s1=Fill(); s2=Fill();
+    FillPtr(&s3); FillPtr(&S4);
+}
